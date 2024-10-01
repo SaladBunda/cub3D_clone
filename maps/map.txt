@@ -1,0 +1,31 @@
+Except for map content each type of element can be seperated by one or more
+empty line
+Except for map content which always has to be the last each type of element can be
+set in any order in the file
+Except for the map each type of information from an element can be separated by one
+or more space(s)
+-> Map must be parsed as it looks in the file, Spaces are a valid part of the map
+Their handling must be handled hh
+->Any type of map must be parsed as long as it respects the rules.
+->Each element except the map firsts information is the type identifier (composed of
+two chars ) followed by all specific info for each object in a strict order
+
+
+NO - Path to north_texture
+SO - Path to south_texture
+WE - Path to west_texture
+EA - Path to east_texture
+F - Floor Color rgb[0, 255]   \
+									They Need to be different
+C - Ceiling color rgb[0, 255] /
+
+=== MAP  ===
+The map must be composed of only 6 possible characters :
+		0 Empty space
+		1 Wall
+		N,S,E,W === Player start position and spawning orientation
+		Map surrounded by walls if not it's an error
+		The left and right arrow keys of the keyboard to look left and right
+		W A S D move to the point of view through the maze
+
+Exemple :
